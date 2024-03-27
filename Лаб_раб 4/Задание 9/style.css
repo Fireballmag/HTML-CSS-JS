@@ -1,0 +1,37 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter {
+    margin: 0 25px;
+}
+
+img {
+    height: 250px;
+    margin: 2px
+}
+
+#grayscale {
+    filter: grayscale(1);
+}
+
+#sepia {
+    filter: sepia(1);
+}
+
+#saturate {
+    filter: saturate(0.5);
+}
+
+#hue-rotate {
+    filter: hue-rotate(90deg);
+}
+
+#invert {
+    filter: invert(1);
+}
+
+#contrast {
+    filter: contrast(0.5);
+}

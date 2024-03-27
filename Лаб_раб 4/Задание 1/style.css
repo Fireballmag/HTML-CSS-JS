@@ -1,0 +1,21 @@
+textarea {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+#booth{
+    resize: both;
+}
+
+#none{
+    resize: none;
+}
+
+#horizontal{
+    resize: horizontal;
+}
+
+#vertical{
+    resize: vertical;
+}

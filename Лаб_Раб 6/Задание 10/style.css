@@ -1,0 +1,123 @@
+body{
+    background-color: rgba(102, 135, 196, 0.637);
+    overflow: hidden;
+}
+
+#container{
+    position: absolute;
+    left: 10px;
+}
+
+button{
+    background-color: blue;
+    border: none;
+    color: white;
+    width: 150px;
+    height: 40px;
+    position: relative;
+    border-radius: 5px;
+    top:100px;
+    z-index: 100;
+}
+
+#machta{
+    position: relative;
+    background-color: blue;
+    width: 5px;
+    height: 75px;
+    bottom: 12px;
+    left: 75px;
+    transform: rotate(-90deg);
+    transform-origin: bottom;
+    z-index: 0;
+}
+
+#machta::before{
+    position: relative;
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-bottom: 0 solid  white;
+    border-left: 50px solid transparent;
+    right: 53px;
+}
+
+#machta::after{
+    position: relative;
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-bottom: 0 solid  white;
+    border-right: 30px solid transparent;
+    right: 42px;
+}
+
+#machta.anim_white::after, #machta.anim_white::before{
+    animation: anim_white 0.6s 0.9s forwards;
+}
+
+.go{
+    animation: go 2s 1.35s linear  forwards;
+}
+
+.anim_borders{
+    animation: anim_borders 0.3s linear;
+    animation-fill-mode: forwards;
+}
+
+.anim_machta{
+    animation: anim_machta 0.5s 0.45s forwards;
+    display: block;
+}
+
+@keyframes go
+{
+    form
+    {
+        left: 0;
+    }
+    to
+    {
+        left: 1250px;
+    }
+}
+
+@keyframes anim_white
+{
+    from
+    {
+        border-bottom: 0 solid  white;
+        top: 47px;
+    }
+    to
+    {
+        border-bottom: 65px solid  white;
+        top: -18px;
+    } 
+}
+
+@keyframes anim_machta
+{
+    from
+    {
+        transform: rotate(-90deg);
+    }
+    to
+    {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes anim_borders
+{
+    from 
+    {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }   
+    to
+    {
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+}

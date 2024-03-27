@@ -1,0 +1,13 @@
+main{
+    display: grid;
+    grid-template-columns: calc(50%/4) calc(50%/20) calc(50%/4) calc(50%/25) calc(50%/15);
+
+   
+}
+
+textarea{
+    margin-bottom: 25px;
+    resize: none;
+    width: 150px;
+    height: 30px;
+}

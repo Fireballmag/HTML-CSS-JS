@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Задача 9</title>
+    </head>
+
+    <body>
+        <main>
+            <script>
+                let adress = prompt('Введите адрес страницы:');  
+                
+                if(adress.startsWith('http://')){
+                    alert('Начинается на http://');
+                }
+
+                if(adress.endsWith('.html')){
+                    alert('Заканчивается на .html');
+                }
+
+                else{
+                    alert('Небыло введено ни .html ни http://');
+                }
+
+            </script>
+        </main>
+    </body>

@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Галерея</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Задача 7</title>
+</head>
+
+<body>
+
+  <p id="ddd"><img id="largeImg" src="images/image-6.jpg" title="5 лучших аниме Хаяо Миядзаки"></p>
+
+  <ul id="thumbs">
+    <!-- браузер показывает небольшую встроенную подсказку из атрибута "title" при наведении курсора на текст -->
+    <li>
+      <a title="Навсикая из долины ветров" onclick='changer(1)'><img src="images/image-1-thumb.jpg" id="fff"></a>
+    </li>
+    <li>
+      <a title="Мой сосед Тоторо" onclick='changer(2)'><img src="images/image-2-thumb.jpg" id="fff2"></a>
+    </li>
+    <li>
+      <a title="Унесенные призраками" onclick='changer(3)'><img src="images/image-3-thumb.jpg"></a>
+    </li>
+    <li>
+      <a title="Ходячий замок" onclick='changer(4)'><img src="images/image-4-thumb.jpg"></a>
+    </li>
+    <li>
+      <a title="Ведьмина служба доставки" onclick='changer(5)'><img src="images/image-5-thumb.jpg"></a>
+    </li>
+  </ul>
+
+
+  <script>
+    function changer(a){
+        let large_img =  document.getElementById("largeImg");
+        switch(a){
+                case 1:large_img.src="images/image-1.jpg" 
+                        break;
+                case 2:large_img.src="images/image-2.jpg";
+                        break;
+                case 3:large_img.src="images/image-3.jpg";
+                        break;
+                case 4:large_img.src="images/image-4.jpg";
+                        break;
+                case 5:large_img.src="images/image-5.jpg";
+                        break;
+        }        
+      }
+  </script>
+
+</body>
+</html>

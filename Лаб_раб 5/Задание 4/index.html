@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Задача 4</title>
+    </head>
+
+    <body>
+        <main>
+            <script>
+                let num=prompt("Введите число:");
+                if(num<15 && num>0){
+                    alert('Попадает в 1 четверть!');
+                }
+                if(num<30 && num>15){
+                    alert('Попадает во 2 четверть!');
+                }
+                if(num<45 && num>30){
+                    alert('Попадает в 3 четверть!');
+                }
+                if(num>45 && num<60){
+                    alert('Попадает в 4 четверть!');
+                }
+                else{
+                    alert('Вы ввели неправильное значение или не ввели его вовсе!')
+                }
+
+                let lang = prompt("Введите язык(ru или by):");
+                let week = [];
+                switch(lang){
+                    case "ru":
+                        week = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'];
+                        break;
+                    case "by":
+                        week = ['Панядзелак', 'Аўторак', 'Серада', 'Чацвер', 'Пятніца', 'Субота', 'Нядзеля'];
+                        break;
+                    default:
+                        alert('Вы не выбрали язык!');
+                        break;
+                }
+                alert(week);
+            </script>
+        </main>
+    </body>
+    
+</html>-

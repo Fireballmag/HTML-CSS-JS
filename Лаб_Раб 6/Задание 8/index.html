@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Задача 8</title>
+    </head>
+
+    <body>
+        <main>
+            <label for="file">Прогресс-бар:</label>
+            <progress id="file" max="100" value="0"></progress>
+            <span> 0% </span><br>
+            <button class="button" onclick="changer()">Нажми чтобы увеличить!</button>
+
+            <script>
+                function changer(){
+                    let a = document.getElementById('file')
+                    if(a.value == 100){
+                        document.querySelector('button').remove()
+                        document.querySelector('span').innerHTML = '100%. Максимум!';
+                    }
+                    else{
+                    a = a.value+5; 
+                    document.querySelector('span').innerHTML = a+'%';
+                    document.getElementById('file').setAttribute('value', a);
+                    }
+                }
+            </script>
+        </main>
+    </body>
+    
+</html>

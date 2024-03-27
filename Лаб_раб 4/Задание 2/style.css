@@ -1,0 +1,27 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    margin-bottom: 25px;
+    width: 300px;
+    height: 150px;
+    border: solid;
+}
+
+#cursor1{
+    cursor: ne-resize;
+}
+
+#cursor2{
+    cursor: help;
+}
+
+#cursor3{
+    cursor: wait;
+}
+
+#cursor4{
+    cursor: url(oo_base_19781.png),pointer;
+}

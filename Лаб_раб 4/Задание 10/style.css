@@ -1,0 +1,10 @@
+main{
+    margin-bottom: 50px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    columns: 3 12em;
+}

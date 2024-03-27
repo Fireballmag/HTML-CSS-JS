@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Задача 5</title>
+    </head>
+
+    <body>
+        <main>
+            <script>
+                let num = [5,6,7,8];
+                let otvet=1;
+                for(let s=0;s<4;s++){
+                    otvet *= num[s];
+                }
+                alert(otvet);
+
+                let obj = {
+                    'Минск':'- это Беларусь!',
+                    'Москва':'- это Россия!',
+                    'Киев':'- это Украина!',
+                }
+                for(let prop in obj){
+                    alert(prop + obj[prop]);
+                }
+            </script>
+        </main>
+    </body>
+    
+</html>

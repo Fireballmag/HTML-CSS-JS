@@ -1,0 +1,19 @@
+main{
+    display: grid;
+    grid-template-columns: calc(50%/2) calc(50%/2);
+    padding: 1em;
+}
+
+textarea, p{
+    resize: none;
+    width: 150px;
+    height: 30px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+
+

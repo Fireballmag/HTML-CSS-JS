@@ -1,0 +1,28 @@
+body{
+    font: 16px, Arial, sans-serif;
+    color: #333;
+    line-height: 1.5em;
+}
+
+.title{
+    color: #f03333;
+    line-height: 1.2em;
+    font: 40px;
+    text-transform: capitalize;
+}
+
+.subtitle{
+    color: #12ac11;
+    line-height: 1.2em;
+    font: 30px;
+    text-decoration: underline;
+}
+
+.list{
+    color: #444;
+    font: 20px;
+    font-style: oblique;
+    list-style-type: square;
+    padding-left: 50px;
+}
+

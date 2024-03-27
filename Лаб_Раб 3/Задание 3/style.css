@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    height: 20%;
+    width: 100%;
+    border: 1px solid;
+}
+
+aside {
+    width: 20%;
+    height: 60%;
+    border: 1px solid;
+}
+
+main {
+    height: 60%;
+    width: 80%;
+    border: 1px solid;
+}
+
+footer {
+    height: 20%;
+    width: 100%;
+    border: 1px solid;
+}
